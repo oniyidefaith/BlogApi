@@ -94,15 +94,15 @@ WSGI_APPLICATION = 'blog.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.postgresql',
-    #     'URL':os.environ.get('PGURL'),
-    #     'NAME': 'railway',
-    #     'USER': 'postgres',
-    #     'PASSWORD': os.environ.get('PGPASSWORD'),
-    #     'HOST': os.environ.get('PGHOST'),
-    #     'PORT': '5775',
-    # }
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'URL':os.environ.get('PGURL'),
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': os.environ.get('PGPASSWORD'),
+        'HOST': os.environ.get('PGHOST'),
+        'PORT': '5775',
+    }
 }
 
 
