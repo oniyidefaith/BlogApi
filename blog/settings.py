@@ -31,7 +31,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['https://web-production-462f.up.railway.app/', '127.0.0.1']
 AUTH_USER_MODEL = 'auths.User'
 
 
@@ -162,6 +162,7 @@ CORS_ALLOWED_ORIGINS = [
 
 CORS_ALLOWED_ORIGIN_REGEXES = [
 r"^https://\w+\.domain\.com$",
+
 ]
 
 CORS_ALLOW_METHODS = [
@@ -184,6 +185,7 @@ CORS_ALLOW_HEADERS = [
 'x-csrftoken',
 'x-requested-with',
 ]
+CSRF_TRUSTED_ORIGINS = ['https://web-production-462f.up.railway.app/']
 
 
 # Static files (CSS, JavaScript, Images)
