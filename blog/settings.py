@@ -31,7 +31,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['web-production-462f.up.railway.app', '127.0.0.1']
+ALLOWED_HOSTS = ['web-production-cb50.up.railway.app', '127.0.0.1']
 AUTH_USER_MODEL = 'auths.User'
 
 
@@ -183,7 +183,7 @@ CORS_ALLOW_HEADERS = [
 'x-csrftoken',
 'x-requested-with',
 ]
-CSRF_TRUSTED_ORIGINS = ['https://web-production-462f.up.railway.app/']
+CSRF_TRUSTED_ORIGINS = ['https://web-production-cb50.up.railway.app/']
 
 
 # Static files (CSS, JavaScript, Images)
